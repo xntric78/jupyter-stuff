@@ -1,0 +1,28 @@
+{
+  "name": "jupyter-dashboards",
+  "description": "Frontend dependencies for the Jupyter Notebook dashboards extension",
+ "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "mocha" :"^2.0.0",
+    "wd": "latest",
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "colors": "latest",
+    "minimist": "latest"
+  },
+  "scripts": {
+    "bower": "bower --allow-root install",
+    "system-test": "node_modules/mocha/bin/mocha system-test/**/*-test.js --timeout 300000 --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyter/dashboards.git"
+  },
+  "keywords": [
+    "ipython",
+    "jupyter",
+    "dashboards"
+  ],
+  "author": "Jupyter Community"
+}
